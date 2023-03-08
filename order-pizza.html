@@ -10,54 +10,62 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Pizza World</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Order Online</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link disabled">Menu</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex me-auto">
+                <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
+                <button class="btn btn-outline-primary  col-auto" type="submit">Search stores near you!</button>
             </form>
+            <div class="d-flex flex-lg-row align-items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+                <a class="nav-link disabled">Sign Up!</a>
+            </div>
+
         </div>
     </div>
 </nav>
-<div class="container-fluid">
-<div class="jumbotron d-flex flex-column text-center justify-content-center">
-    <h1 class="bg-light bg-opacity-75">Welcome to Pizza World!</h1>
-</div>
-<h2>Build your own Pizza!</h2>
+<div class="container-fluid" style="max-width: 80%">
+    <div class="jumbotron d-flex flex-column text-center justify-content-center">
+        <h1 class="bg-light bg-opacity-75 py-2">Welcome to Pizza World!</h1>
+    </div>
+    <h2>Build your own Pizza!</h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Size and Crust</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                <div class="d-flex flex-lg-row align-items-center gap-2">
+                    <p class="bg-secondary text-light fw-bold rounded-circle px-2">1</p>
+                    <p class="fw-bold">Size and Crust</p>
+                </div>
+            </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Cheese and Sauce</button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                <div class="d-flex flex-lg-row align-items-center gap-2">
+                    <p class="bg-secondary text-light fw-bold rounded-circle px-2">2</p>
+                    <p class="fw-bold">Cheese and Sauce</p>
+                </div>
+            </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Toppings</button>
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                <div class="d-flex flex-lg-row align-items-center gap-2">
+                    <p class="bg-secondary text-light fw-bold rounded-circle px-2">3</p>
+                    <p class="fw-bold">Toppings</p>
+                </div>
+            </button>
         </li>
     </ul>
     <div class="tab-content bg-light rounded" id="myTabContent">
@@ -106,10 +114,10 @@
                 <h5 class="card-title text-light ">Choose Cheese and Sauce:</h5>
             </div>
             <div class="card bg-opacity-25" style="width: auto;">
-                    <div class="card" style="width: auto;">
-                        <div class="card-body d-flex flex-column gap-3">
-                            <div class="card" style="width: auto;">
-                                <ul class="list-group">
+                <div class="card" style="width: auto;">
+                    <div class="card-body d-flex flex-column gap-3">
+                        <div class="card" style="width: auto;">
+                            <ul class="list-group">
                                 <li class="list-group-item bg-light" aria-current="true">Cheese</li>
                                 <li class="list-group-item">How Much?</li>
                                 <li class="list-group-item">
@@ -122,9 +130,9 @@
                                     </label>
                                 </li>
                             </ul>
-                            </div>
-                            <div class="card" style="width: auto;">
-                                <ul class="list-group">
+                        </div>
+                        <div class="card" style="width: auto;">
+                            <ul class="list-group">
                                 <li class="list-group-item bg-light" aria-current="true">Sauce</li>
                                 <li class="list-group-item">What Type?</li>
                                 <li class="list-group-item">
@@ -147,9 +155,9 @@
                                     </label>
                                 </li>
                             </ul>
-                            </div>
                         </div>
                     </div>
+                </div>
             </div>
             <div class="d-flex row justify-content-end">
                 <a href="#" class="btn btn-primary col-auto m-3">Next Step ></a>
@@ -157,7 +165,7 @@
         </div>
     </div>
     <div class="tab-content bg-light rounded" id="myTabContent">
-        <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="bg-primary p-3">
                 <h5 class="card-title text-light ">Choose Toppings:</h5>
             </div>
@@ -204,11 +212,6 @@
             </div>
         </div>
     </div>
-</div>
-
-</div>
-<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-</div>
 </div>
 </body>
 </html>
